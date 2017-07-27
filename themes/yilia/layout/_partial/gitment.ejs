@@ -1,0 +1,18 @@
+<div id="gitment"></div>
+
+<!-- 主页不要加载gitment -->
+<% if (!index){ %>
+
+<script>
+var gitment = new Gitment({
+  owner: 'sophiayun',
+  repo: 'sophiayun.github.io',
+  oauth: {
+    client_id: '0c838246023db93c53d0',
+    client_secret: '7774fa69805dd721888335d5d5c653676a9bcffe',
+  },
+})
+gitment.render('gitment')
+</script>
+ 
+<% } %>
